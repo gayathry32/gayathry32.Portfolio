@@ -2,7 +2,8 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #f8f9fa;
+    background-color: #121212;
+    color: #ffffff;
     margin: 0;
     padding: 20px;
 }
@@ -11,41 +12,49 @@ body {
 .container {
     max-width: 800px;
     margin: auto;
-    background: white;
+    background: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 /* Header */
 header h1 {
-    color: #007BFF;
+    color: #ffcc00;
     font-size: 2rem;
 }
 
-.highlight {
-    color: #ff7b00;
+.subtitle {
+    font-size: 1.1rem;
+    color: #bbbbbb;
+    margin-top: 5px;
 }
 
 /* Sections */
 .projects, .contact, .experience, .presentations {
     margin: 20px 0;
     padding: 15px;
-    background: #ffffff;
+    background: #222;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Titles */
+h2 {
+    color: #ffcc00;
+    font-size: 1.5rem;
 }
 
 /* Links */
 a {
-    color: #007BFF;
+    color: #00bcd4;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #ff7b00;
+    color: #ffcc00;
 }
 
 /* List */
@@ -62,6 +71,16 @@ li {
 /* Icons */
 i {
     margin-right: 8px;
-    color: #007BFF;
+    color: #00bcd4;
 }
 
+/* Highlight Key Words */
+b {
+    color: #ffcc00;
+}
+
+/* Work Experience */
+.experience span {
+    color: #00bcd4;
+    font-weight: bold;
+}
