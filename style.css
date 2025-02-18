@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center;
     background-color: #121212;
-    color: #ffffff;
+    color: #f4f4f4;
     margin: 0;
     padding: 20px;
 }
@@ -20,13 +20,13 @@ body {
 
 /* Header */
 header h1 {
-    color: #ffcc00;
-    font-size: 2rem;
+    color: #00bcd4;
+    font-size: 2.2rem;
 }
 
 .subtitle {
     font-size: 1.1rem;
-    color: #bbbbbb;
+    color: #aaaaaa;
     margin-top: 5px;
 }
 
@@ -41,20 +41,20 @@ header h1 {
 
 /* Titles */
 h2 {
-    color: #ffcc00;
-    font-size: 1.5rem;
+    color: #00bcd4;
+    font-size: 1.6rem;
 }
 
 /* Links */
 a {
-    color: #00bcd4;
+    color: #1ecbe1;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #ffcc00;
+    color: #ff4081;
 }
 
 /* List */
@@ -64,23 +64,55 @@ ul {
 }
 
 li {
-    padding: 8px 0;
+    padding: 10px 0;
     font-size: 18px;
 }
 
 /* Icons */
 i {
     margin-right: 8px;
-    color: #00bcd4;
+    color: #1ecbe1;
 }
 
 /* Highlight Key Words */
 b {
-    color: #ffcc00;
+    color: #1ecbe1;
 }
 
 /* Work Experience */
 .experience span {
-    color: #00bcd4;
+    color: #ff4081;
     font-weight: bold;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.project-card {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background: #00bcd4;
+}
+
+.project-card a {
+    display: block;
+    color: #f4f4f4;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-card a:hover {
+    color: #121212;
 }
