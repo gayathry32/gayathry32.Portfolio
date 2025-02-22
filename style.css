@@ -1,118 +1,30 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
     background-color: #121212;
-    color: #f4f4f4;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-}
-
-/* Container */
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-}
-
-/* Header */
-header h1 {
-    color: #00bcd4;
-    font-size: 2.2rem;
-}
-
-.subtitle {
-    font-size: 1.1rem;
-    color: #aaaaaa;
-    margin-top: 5px;
-}
-
-/* Sections */
-.projects, .contact, .experience, .presentations {
-    margin: 20px 0;
-    padding: 15px;
-    background: #222;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-}
-
-/* Titles */
-h2 {
-    color: #00bcd4;
-    font-size: 1.6rem;
-}
-
-/* Links */
-a {
-    color: #1ecbe1;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #ff4081;
-}
-
-/* List */
-ul {
-    list-style-type: none;
     padding: 0;
 }
 
-li {
-    padding: 10px 0;
-    font-size: 18px;
-}
-
-/* Icons */
-i {
-    margin-right: 8px;
-    color: #1ecbe1;
-}
-
-/* Highlight Key Words */
-b {
-    color: #1ecbe1;
-}
-
-/* Work Experience */
-.experience span {
-    color: #ff4081;
-    font-weight: bold;
-}
-
-/* Project Grid */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
-.project-card {
-    background: #333;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    background: #00bcd4;
-}
-
-.project-card a {
-    display: block;
-    color: #f4f4f4;
-    font-size: 1rem;
-    font-weight: bold;
+header {
     text-align: center;
+    padding: 20px;
+    background: #222;
 }
 
-.project-card a:hover {
-    color: #121212;
+h1 {
+    color: #fbc02d;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
 }
