@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gayathry's Portfolio</title>
+    <title>Portfolio with Slider</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 </head>
 <body>
     <header>
@@ -16,7 +19,6 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#research">Research</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -25,88 +27,68 @@
     <section id="about">
         <h2>About Me</h2>
         <p>🌍 Geospatial Analyst | Remote Sensing Specialist | Drone Pilot | Sustainable Agriculture | Machine Learning Expert | Digital Twins</p>
-        <p>I am a passionate geospatial analyst and remote sensing specialist with expertise in Earth observation, GIS, and AI-driven geospatial analytics. My work focuses on applying machine learning and remote sensing to solve agriculture, climate resilience, and environmental sustainability challenges.</p>
     </section>
     
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Estimating Soil Nutrients with Hyperspectral Data</h3>
-            <p>Using hyperspectral imaging and ML models for soil nutrient estimation.</p>
-        </div>
-        <div class="project">
-            <h3>Flood Resilience in Kampala</h3>
-            <p>Geospatial analysis to enhance flood resilience strategies.</p>
-        </div>
-        <div class="project">
-            <h3>Agricultural Drought Analysis (NDVI & LST)</h3>
-            <p>Comparing NDVI and LST trends to assess drought impacts.</p>
-        </div>
-        <div class="project">
-            <h3>Land Cover Classification with Random Forest</h3>
-            <p>Machine learning-driven classification for geospatial analysis.</p>
-        </div>
-        <div class="project">
-            <h3>Tackling Overgrazing & Deforestation in Oloisukut Conservancy</h3>
-            <p>Remote sensing-based environmental conservation analysis.</p>
-        </div>
-        <div class="project">
-            <h3>Energy Transition in Paddepoel</h3>
-            <p>Geospatial modeling for sustainable energy solutions.</p>
-        </div>
+        <div class="project-slider">
             <div class="project">
-            <h3>Iris Flower Classification Using Machine Learning</h3>
-            <p>A performance comparison of SVM, Random Forest, and XGBoost models for flower classification.</p>
-        </div>
-        <div class="project">
-            <h3>Land Cover Classification Using Random Forest for Geospatial Analysis</h3>
-            <p>Using Random Forest for accurate land cover classification in geospatial applications.</p>
+                <h3>Iris Flower Classification</h3>
+                <p>Comparison of SVM, Random Forest, and XGBoost models for classification.</p>
+            </div>
+            <div class="project">
+                <h3>Land Cover Classification</h3>
+                <p>Using Random Forest for geospatial analysis and remote sensing applications.</p>
+            </div>
+            <div class="project">
+                <h3>Agricultural Drought Analysis</h3>
+                <p>Using NDVI & LST to assess drought impacts on crops.</p>
+            </div>
+            <div class="project">
+                <h3>Flood Resilience in Kampala</h3>
+                <p>Using geospatial techniques for flood risk reduction.</p>
+            </div>
         </div>
     </section>
+    
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>🛰️ Machine Learning for Earth Observation & Geospatial AI</li>
-            <li>🌱 Soil Nutrient Estimation using Hyperspectral & Satellite Data</li>
-            <li>📊 Agricultural Drought & Flood Resilience Analysis</li>
-            <li>🤖 Deep Learning for Remote Sensing (CNNs, U-Net, Random Forest)</li>
-            <li>📡 GIS & Satellite Data Processing (Google Earth Engine, QGIS, ArcGIS)</li>
-        </ul>
-    </section>
-    
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="experience">
-            <h3>Remote Sensing Specialist | NASA SERVIR 🌍</h3>
-            <p>Developed AI models for farm boundary extraction and agriculture monitoring using Sentinel-2 imagery.</p>
-        </div>
-        <div class="experience">
-            <h3>Geospatial Data Analyst | UNDP 🏛️</h3>
-            <p>Conducted epidemiology & public health analysis using geospatial data during the COVID-19 pandemic.</p>
-        </div>
-        
-    </section>
-    
-    <section id="research">
-        <h2>Research & Presentations</h2>
-        <ul>
-            <li>🌍 Youth4SDG Awards 2019 - Flood Resilience using Satellite & Volunteer Data</li>
-            <li>📊 ICACE-2019 (KL University & Govt. of India) - Role of Geospatial Technology in Disaster Management</li>
-            <li>🛰 International Applied Data Science Conference 2030 - AI & Remote Sensing for Sustainable Development</li>
-            <li>🏛 University of Twente - Research on Flood Resilience, Land Degradation & Energy Transition</li>
+            <li>GIS & Remote Sensing</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>Google Earth Engine</li>
+            <li>Python, TensorFlow, QGIS</li>
         </ul>
     </section>
     
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:gayathry.damarla@gmail.com">gayathry.damarla@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/gayathry32" target="_blank">github.com/gayathry32</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/gayathry-damarla-b9bb58155/" target="_blank">Gayathry Damarla</a></p>
-        <p>Portfolio: <a href="#">Visit My Website</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/gayathry-damarla-b9bb58155/" target="_blank">My Profile</a></p>
     </section>
     
     <footer>
         <p>&copy; 2025 Gayathry Damarla | All Rights Reserved</p>
     </footer>
+    
+    <!-- jQuery and Slick Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.project-slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
 </body>
 </html>
