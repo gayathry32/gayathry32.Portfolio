@@ -1,161 +1,118 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #2c3e50, #4ca1af);
-    color: #fff;
-    line-height: 1.6;
-}
-
-/* Header Styles */
-header {
-    background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff7eb3);
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffd700;
-}
-
-/* Sections */
-section {
-    padding: 80px 20px;
-    max-width: 1100px;
-    margin: auto;
-    text-align: center;
-}
-
-h2 {
-    color: #ffd700;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* About Me Section */
-#about {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
-    padding: 50px;
-    border-radius: 12px;
-    margin: 40px auto;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-    max-width: 900px;
-    text-align: center;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 4px solid #ffd700;
-}
-
-#about h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ffd700;
-}
-
-#about p {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    line-height: 1.8;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Skills Section */
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.skills-grid span {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    color: white;
-    padding: 15px 25px;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Project Slider */
-.project-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.project {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-    width: 85%;
-    margin: auto;
-    min-height: 200px;
-    color: white;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-}
-
-.slick-dots li button:before {
-    color: #ffd700 !important;
-    font-size: 12px;
-}
-
-.slick-prev, .slick-next {
-    color: #ffd700 !important;
-    font-size: 20px;
-    z-index: 10;
-}
-
-.slick-prev:hover, .slick-next:hover {
-    color: #ff758c !important;
-}
-
-/* Footer */
-footer {
-    background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff7eb3);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 18px;
-    margin-top: 40px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with Slider</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Gayathry Damarla</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="P2150499.JPG" alt="Gayathry Damarla" class="profile-pic">
+        <p>🌍 Geospatial Analyst | Remote Sensing Specialist | Drone Pilot | Sustainable Agriculture | Machine Learning Expert | Digital Twins</p>
+        <p>I am a passionate geospatial analyst and remote sensing specialist with expertise in Earth observation, GIS, and AI-driven geospatial analytics. My work focuses on applying machine learning and remote sensing to solve agriculture, climate resilience, and environmental sustainability challenges.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-slider">
+            <div class="project">
+                <h3>Estimating Soil Nutrients With Hyperspectral Measurements</h3>
+                <p>Utilizing hyperspectral imaging for soil nutrient estimation to aid sustainable agriculture.</p>
+            </div>
+            <div class="project">
+                <h3>A Case on Developing Intervention to Improve Flood Resilience in Kampala</h3>
+                <p>Geospatial techniques for enhancing flood resilience strategies in urban areas.</p>
+            </div>
+            <div class="project">
+                <h3>Agricultural Drought Analysis Using NDVI and LST</h3>
+                <p>Assessing drought impacts in the Rayalaseema region using Python and remote sensing data.</p>
+            </div>
+            <div class="project">
+                <h3>Land Cover Classification Using Random Forest</h3>
+                <p>Machine learning-driven classification for geospatial analysis.</p>
+            </div>
+            <div class="project">
+                <h3>Tackling Overgrazing and Deforestation in Oloisukut Conservancy</h3>
+                <p>Implementing food forests as a sustainable solution for ecosystem conservation.</p>
+            </div>
+            <div class="project">
+                <h3>Energy Transition in Paddepoel</h3>
+                <p>Analyzing the shift towards sustainable energy solutions in urban areas.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <span>GIS & Remote Sensing</span>
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>Google Earth Engine</span>
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>QGIS</span>
+        </div>
+    </section>
+    
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Remote Sensing Specialist | NASA SERVIR 🌍</h3>
+            <p>Developed AI models for farm boundary extraction and agriculture monitoring using Sentinel-2 imagery.</p>
+        </div>
+        <div class="experience">
+            <h3>Geospatial Data Analyst | UNDP 🏛️</h3>
+            <p>Conducted epidemiology & public health analysis using geospatial data during the COVID-19 pandemic.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:gayathry.damarla@gmail.com">gayathry.damarla@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/gayathry-damarla-b9bb58155/" target="_blank">My Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Gayathry Damarla | All Rights Reserved</p>
+    </footer>
+    
+    <!-- jQuery and Slick Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.project-slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
