@@ -20,7 +20,7 @@ With hands-on experience in **hyperspectral analysis, deep learning models, and 
   Developed AI models for **farm boundary extraction** and **agriculture monitoring** using **Sentinel-2 imagery**.  
 - **Geospatial Data Analyst** | *UNDP* 🏛️  
   Conducted **epidemiology & public health analysis** using geospatial data during the COVID-19 pandemic.  
-- **Internship** | *Farm Boundary Extraction using Earth Observation & Deep Learning*
+
 
 ## 🏆 **Key Projects**
 🔹 **Estimating Soil Nutrients with Hyperspectral Data**  
