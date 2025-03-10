@@ -1,30 +1,119 @@
+/* Global Styles */
 body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #facc15;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    color: #1e3a8a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Project Section */
+.project {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     padding: 0;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background: #222;
+#skills ul li {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
 }
 
-h1 {
-    color: #fbc02d;
-}
-
-section {
-    padding: 20px;
-    margin: 10px;
+/* Experience Section */
+.experience {
+    background-color: white;
+    padding: 15px;
     border-radius: 10px;
-    background: #333;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Contact Section */
+#contact a {
+    color: #1e3a8a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
+    background-color: #1e3a8a;
+    color: white;
     text-align: center;
-    padding: 10px;
-    background: #222;
+    padding: 10px 0;
+    margin-top: 20px;
 }
