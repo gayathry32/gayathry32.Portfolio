@@ -1,94 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio with Slider</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Slick Carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-</head>
-<body>
-    <header>
-        <nav>
-            <h1>Gayathry Damarla</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>🌍 Geospatial Analyst | Remote Sensing Specialist | Drone Pilot | Sustainable Agriculture | Machine Learning Expert | Digital Twins</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-slider">
-            <div class="project">
-                <h3>Iris Flower Classification</h3>
-                <p>Comparison of SVM, Random Forest, and XGBoost models for classification.</p>
-            </div>
-            <div class="project">
-                <h3>Land Cover Classification</h3>
-                <p>Using Random Forest for geospatial analysis and remote sensing applications.</p>
-            </div>
-            <div class="project">
-                <h3>Agricultural Drought Analysis</h3>
-                <p>Using NDVI & LST to assess drought impacts on crops.</p>
-            </div>
-            <div class="project">
-                <h3>Flood Resilience in Kampala</h3>
-                <p>Using geospatial techniques for flood risk reduction.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>GIS & Remote Sensing</li>
-            <li>Machine Learning</li>
-            <li>Deep Learning</li>
-            <li>Google Earth Engine</li>
-            <li>Python, TensorFlow, QGIS</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:gayathry.damarla@gmail.com">gayathry.damarla@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/gayathry-damarla-b9bb58155/" target="_blank">My Profile</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Gayathry Damarla | All Rights Reserved</p>
-    </footer>
-    
-    <!-- jQuery and Slick Carousel JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    
-    <script>
-        $(document).ready(function(){
-            $('.project-slider').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                dots: true,
-                arrows: false,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 1,
-                adaptiveHeight: true
-            });
-        });
-    </script>
-</body>
-</html>
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a192f;
+    color: #ccd6f6;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: #112240;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #64ffda;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8892b0;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    color: #64ffda;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Project Slider */
+.project-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project {
+    background: #112240;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    width: 80%;
+    margin: auto;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.slick-dots li button:before {
+    color: #64ffda !important;
+    font-size: 12px;
+}
+
+.slick-prev, .slick-next {
+    color: #64ffda !important;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    color: #f39c12 !important;
+}
+
+/* Skills */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+#skills ul li {
+    background: #233554;
+    color: #64ffda;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Contact */
+#contact a {
+    color: #64ffda;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #112240;
+    color: #64ffda;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
