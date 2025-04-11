@@ -1,236 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio with Slider</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Slick Carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #e6ecf2;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gayathry Damarla Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 
-        header {
-            background: #333;
-            color: white;
-            padding: 20px;
-        }
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 
-        nav h1 {
-            margin: 0;
-        }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e6ecf2;
+      margin: 0;
+      padding: 0;
+    }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            padding: 0;
-        }
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+    }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        section {
-            padding: 40px 20px;
-        }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
 
-        h2 {
-            border-bottom: 2px solid #aaa;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
 
-        .project-slider .project {
-            background: white;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 8px;
-        }
+    section {
+      padding: 40px 20px;
+    }
 
-        .experience {
-            background: white;
-            padding: 20px;
-            margin: 10px 0;
-            border-radius: 8px;
-        }
+    h2 {
+      border-bottom: 2px solid #aaa;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
 
-        #skills ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            list-style: none;
-            padding: 0;
-        }
+    .project-slider .project {
+      background: white;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+    }
 
-        #skills li {
-            background: white;
-            padding: 10px 15px;
-            border-radius: 6px;
-        }
+    .experience {
+      background: white;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
 
-        #achievements ul {
-            list-style: none;
-            padding-left: 0;
-        }
+    #skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+    }
 
-        #achievements li {
-            margin-bottom: 20px;
-            font-size: 1rem;
-            line-height: 1.5;
-        }
+    #skills li {
+      background: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+    }
 
-        #achievements strong {
-            color: #000;
-        }
+    #achievements ul {
+      list-style: none;
+      padding-left: 0;
+    }
 
-        #achievements em {
-            color: #51a7d3;
-            display: block;
-            font-style: italic;
-        }
+    #achievements li {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
 
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    #achievements strong {
+      color: #000;
+    }
+
+    #achievements em {
+      color: #51a7d3;
+      display: block;
+      font-style: italic;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Gayathry Damarla</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>🌍 Geospatial Analyst | Remote Sensing Specialist | Drone Pilot | Sustainable Agriculture | Machine Learning Expert | Digital Twins</p>
-        <p>I am a passionate geospatial analyst and remote sensing specialist with expertise in Earth observation, GIS, and AI-driven geospatial analytics. My work focuses on applying machine learning and remote sensing to solve agriculture, climate resilience, and environmental sustainability challenges.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-slider">
-            <div class="project">
-                <h3>Estimating Soil Nutrients With Hyperspectral Measurements</h3>
-                <p>Utilizing hyperspectral imaging for soil nutrient estimation to aid sustainable agriculture.</p>
-            </div>
-            <div class="project">
-                <h3>A Case on Developing Intervention to Improve Flood Resilience in Kampala</h3>
-                <p>Geospatial techniques for enhancing flood resilience strategies in urban areas.</p>
-            </div>
-            <div class="project">
-                <h3>Agricultural Drought Analysis Using NDVI and LST</h3>
-                <p>Assessing drought impacts in the Rayalaseema region using Python and remote sensing data.</p>
-            </div>
-            <div class="project">
-                <h3>Land Cover Classification Using Random Forest</h3>
-                <p>Machine learning-driven classification for geospatial analysis.</p>
-            </div>
-            <div class="project">
-                <h3>Tackling Overgrazing and Deforestation in Oloisukut Conservancy</h3>
-                <p>Implementing food forests as a sustainable solution for ecosystem conservation.</p>
-            </div>
-            <div class="project">
-                <h3>Energy Transition in Paddepoel</h3>
-                <p>Analyzing the shift towards sustainable energy solutions in urban areas.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>GIS & Remote Sensing</li>
-            <li>Machine Learning</li>
-            <li>Deep Learning</li>
-            <li>Google Earth Engine</li>
-            <li>Python, TensorFlow, QGIS</li>
-        </ul>
-    </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience">
-            <h3>Remote Sensing Specialist | NASA SERVIR 🌍</h3>
-            <p>Developed AI models for farm boundary extraction and agriculture monitoring using Sentinel-2 imagery.</p>
-        </div>
-        <div class="experience">
-            <h3>Geospatial Data Analyst | UNDP 🏛️</h3>
-            <p>Conducted epidemiology & public health analysis using geospatial data during the COVID-19 pandemic.</p>
-        </div>
-    </section>
+  <header>
+    <nav>
+      <h1>Gayathry Damarla</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li><strong>First Prize in Data Science Hackathon – 2019</strong><br>
-                <em>UNDP, DAV Data Solutions, INIAC</em></li>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>🌍 Geospatial Analyst | Remote Sensing Specialist | Drone Pilot | Sustainable Agriculture | Machine Learning Expert | Digital Twins</p>
+    <p>I am a passionate geospatial analyst and remote sensing specialist with expertise in Earth observation, GIS, and AI-driven geospatial analytics. My work focuses on applying machine learning and remote sensing to solve agriculture, climate resilience, and environmental sustainability challenges.</p>
+  </section>
 
-            <li><strong><em>Secured 13th rank in AP PGECET 2019</em></strong><br>
-                <em>A State-Level Postgraduate Entrance Exam – Andhra Pradesh (2019-2020)</em></li>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-slider">
+      <div class="project">
+        <h3>Estimating Soil Nutrients With Hyperspectral Measurements</h3>
+        <p>Utilizing hyperspectral imaging for soil nutrient estimation to aid sustainable agriculture.</p>
+      </div>
+      <div class="project">
+        <h3>A Case on Developing Intervention to Improve Flood Resilience in Kampala</h3>
+        <p>Geospatial techniques for enhancing flood resilience strategies in urban areas.</p>
+      </div>
+      <div class="project">
+        <h3>Agricultural Drought Analysis Using NDVI and LST</h3>
+        <p>Assessing drought impacts in the Rayalaseema region using Python and remote sensing data.</p>
+      </div>
+      <div class="project">
+        <h3>Land Cover Classification Using Random Forest</h3>
+        <p>Machine learning-driven classification for geospatial analysis.</p>
+      </div>
+      <div class="project">
+        <h3>Tackling Overgrazing and Deforestation in Oloisukut Conservancy</h3>
+        <p>Implementing food forests as a sustainable solution for ecosystem conservation.</p>
+      </div>
+      <div class="project">
+        <h3>Energy Transition in Paddepoel</h3>
+        <p>Analyzing the shift towards sustainable energy solutions in urban areas.</p>
+      </div>
+    </div>
+  </section>
 
-            <li><strong>KLU Excellence Scholarship worth €15,000 (2019–2022)</strong><br>
-                <em>K L University</em></li>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>GIS & Remote Sensing</li>
+      <li>Machine Learning</li>
+      <li>Deep Learning</li>
+      <li>Google Earth Engine</li>
+      <li>Python, TensorFlow, QGIS</li>
+    </ul>
+  </section>
 
-            <li><strong>ITC Holland Scholarship for Internship worth €1,500 (2024)</strong><br>
-                <em>University of Twente</em></li>
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <h3>Remote Sensing Specialist | NASA SERVIR 🌍</h3>
+      <p>Developed AI models for farm boundary extraction and agriculture monitoring using Sentinel-2 imagery.</p>
+    </div>
+    <div class="experience">
+      <h3>Geospatial Data Analyst | UNDP 🏛️</h3>
+      <p>Conducted epidemiology & public health analysis using geospatial data during the COVID-19 pandemic.</p>
+    </div>
+  </section>
 
-            <li><strong><em>Licensed Drone Pilot in Europe</em></strong><br>
-                <em>EASA, RDW, Europe</em></li>
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li><strong>First Prize in Data Science Hackathon – 2019</strong><br>
+        <em>UNDP, DAV Data Solutions, INIAC</em></li>
 
-            <li><strong>ITC Excellence Scholarship worth €32,000 (2022–2024)</strong><br>
-                <em>University of Twente</em></li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:gayathry.damarla@gmail.com">gayathry.damarla@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/gayathry-damarla-b9bb58155/" target="_blank">My Profile</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Gayathry Damarla | All Rights Reserved</p>
-    </footer>
-    
-    <!-- jQuery and Slick Carousel JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    
-    <script>
-        $(document).ready(function(){
-            $('.project-slider').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                dots: true,
-                arrows: false,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 1,
-                adaptiveHeight: true
-            });
-        });
-    </script>
+      <li><strong><em>Secured 13th rank in AP PGECET 2019</em></strong><br>
+        <em>A State-Level Postgraduate Entrance Exam – Andhra Pradesh (2019-2020)</em></li>
+
+      <li><strong>KLU Excellence Scholarship worth €15,000 (2019–2022)</strong><br>
+        <em>K L University</em></li>
+
+      <li><strong>ITC Holland Scholarship for Internship worth €1,500 (2024)</strong><br>
+        <em>University of Twente</em></li>
+
+      <li><strong><em>Licensed Drone Pilot in Europe</em></strong><br>
+        <em>EASA, RDW, Europe</em></li>
+
+      <li><strong>ITC Excellence Scholarship worth €32,000 (2022–2024)</strong><br>
+        <em>University of Twente</em></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:gayathry.damarla@gmail.com">gayathry.damarla@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/gayathry-damarla-b9bb58155/" target="_blank">My Profile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gayathry Damarla | All Rights Reserved</p>
+  </footer>
+
+  <!-- jQuery and Slick Carousel JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.project-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        adaptiveHeight: true
+      });
+    });
+  </script>
 </body>
 </html>
